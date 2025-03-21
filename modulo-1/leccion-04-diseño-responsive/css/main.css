@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    /* --> 10px */
+    font-size: 20px;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    height: 60px;
+    z-index: 1;
+
+    background-color: darkcyan;
+    color: white;
+    padding: 10px 30px;
+}
+
+/* Posicionando los articulos**/
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.articles .article {
+    margin-block: 20px;
+    /*  width: 100%;  ---> Por defecto, tiene ancho 100% */
+
+    border: solid 1px black;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.article .title {
+    margin-block: 10px;
+}
+
+.picture {
+    width: 10rem;
+    /* 16px */
+}
+
+.central-column {
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+/* Desktop */
+@media all and (min-width: 1024px) {
+    .articles {
+        flex-direction: row;
+    }
+
+    .article {
+        max-width: 50%;
+    }
+}
+
+/* Tablet */
+@media all and (min-width: 736px) {
+    .articles {
+        flex-direction: row;
+    }
+
+    .article {
+        max-width: 30%;
+    }
+
+}

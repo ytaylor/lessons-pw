@@ -1,0 +1,36 @@
+/* Reset de estilos del navegador (user agent) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  margin: 20px 10px;
+}
+
+.container {
+  border: solid 1px red;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 400px;
+  border: solid 1px black;
+}
+
+.container-vertical {
+  border: solid 5px red;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box-vertical {
+  height: 25%;
+  border: solid 1px black;
+}

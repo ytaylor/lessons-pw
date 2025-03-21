@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  padding: 20px;
+  background-color: darkcyan;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu_list {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu_link {
+  padding: 10px;
+  color: white;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  text-align: center;
+
+  border: solid 3px darkcyan;
+  border-radius: 5px;
+  margin: 10px;
+  padding-top: 10px;
+}
+
+.card-img {
+  width: 100%;
+}

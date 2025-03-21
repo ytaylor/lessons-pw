@@ -1,0 +1,71 @@
+:root {   /* html { */
+  /* Estilos de texto (de las fuentes generales) */
+
+  color: #000099;
+  /* text-align: center; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+
+body {
+  
+}
+
+.nombre_de_clase {
+  color: #934ea8;  /* Comentario: rgb(147, 78, 168);  */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text , .subtitle {
+  color: #000099;  /* Comentario: rgb(0,0,0);  */
+}
+
+.link {
+  color: darkcyan;
+}
+
+.section-definition .link {
+  font-size: 30px;
+  color: red;
+}
+
+.text > .link {
+  font-size: 30px;
+  color: green;
+}
+
+
+
+.paragraph {
+  /*
+  margin: 100px;
+  */
+  /*
+  margin-block: 100px;
+  margin-inline: 50px;
+  */
+  /* margin-top: 100px;
+  margin-right: 80px;
+  margin-bottom: 50px;
+  margin-left: 20px; */
+  /*
+  margin: 100px 80px 50px 20px;
+  */
+
+  margin: 100px;
+  border: solid 1px black;
+  /* border-bottom: solid 1px black; */
+  background-color: lightsalmon;
+  padding: 100px;
+
+
+  width: 100px;
+}
+
+.spotlight {
+  background-color: yellowgreen;
+}
+
+.image  {
+  width: 250px;
+}

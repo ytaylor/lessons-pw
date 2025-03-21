@@ -1,0 +1,82 @@
+/* 🎨 Variables CSS */
+:root {
+  --main-color: #ff4500;
+  --secondary-color: aquamarine;
+  --text-color: #333;
+  --bg-color: #f9f9f9;
+}
+
+/* 🌍 Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+
+/* 📢 Encabezados */
+h1 {
+  color: var(--main-color);
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+/* 📝 Párrafos */
+p {
+  background-color: var(--secondary-color);
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* 🖼️ Imágenes */
+img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* 🖱️ Efecto hover en imágenes */
+img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔗 Enlaces */
+a {
+  color: var(--main-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: darkred;
+}
+
+/* 📋 Listas */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+/* 🏗️ Estilo especial para los ingredientes */
+ul li {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+ul ul {
+  list-style-type: circle;
+}
+
+/* ✨ Detalles extra con pseudo-elementos */
+h1::after {
+  content: " 🍳";
+}

@@ -1,0 +1,207 @@
+# 🎨 SASS, BEM, Media Queries y Mixins
+
+1. BEM
+2. Sass, anidación, imágenes
+3. Sass, partials
+4. Sass, variables
+
+### 🟡 BEM: Metodología para nombrar clases CSS
+BEM es una convención de nombres en CSS que mejora la organización del código.
+- https://getbem.com/naming/ 
+- Bloque (Block): Elemento principal
+- Elemento (Element): Parte del bloque
+- Modificador (Modifier): Variaciones del elemento
+
+Ejemplo en HTML:
+```html
+<header class="header">
+  <button class="header__button"></button>
+  <button class="header__button--success"></button>
+  <button class="header__button--small"></button>
+</header>
+
+```
+En SASS, podemos estructurarlo con anidación y selectores &:
+
+```scss
+.header {
+  &__button {
+    background: blue;
+    &--success {
+      background: green;
+    }
+    &--small {
+      font-size: 12px;
+    }
+  }
+}
+```
+
+## 🟣 SASS: Preprocesador de CSS
+
+[SASS](http://sass-lang.com) es un preprocesador de CSS que permite:
+
+- ✅ Usar **variables**  
+- ✅ Anidar selectores (**nesting**)  
+- ✅ Dividir el código en **módulos**  
+- ✅ Utilizar **mixins y funciones** para reutilizar código  
+
+### 🔹 Anidación de estilos (Nesting)
+SASS permite anidar selectores de forma más legible:
+
+```scss
+.menu {
+  ul {
+    list-style: none;
+    li {
+      display: inline-block;
+    }
+  }
+}
+```
+
+Se convierte en:
+```scss
+.menu ul {
+  list-style: none;
+}
+.menu ul li {
+  display: inline-block;
+}
+```
+ - Usar & para referenciar el selector padre:
+```scss
+.menu {
+  .&_ul {
+    list-style: none;
+    li {
+      display: inline-block;
+    }
+  }
+}
+```
+
+## Imagenes en SASS
+- Para incluir imágenes en SASS, se puede usar la función `url()`:
+- Es importante ver lo de las rutas de la s imágenes y su ubicación.  
+
+
+### 🔵 Media Queries en SASS 📏
+
+SASS permite incluir media queries dentro de los selectores, facilitando la lectura y mantenimiento del código.
+
+```scss
+.wrapper {
+  margin: 0 20px;
+  @media (min-width: 768px) {
+    margin: 0 40px;
+  }
+  @media (min-width: 1280px) {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+```
+Se convierte en:
+
+```scss
+.wrapper {
+  margin: 0 20px;
+}
+@media (min-width: 768px) {
+  .wrapper {
+    margin: 0 40px;
+  }
+}
+@media (min-width: 1280px) {
+  .wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+```
+
+### 🟢 Partials en SASS
+
+Los partials son archivos SASS que contienen fragmentos de código reutilizables. Se crean con el prefijo `_` y se importan en el archivo principal.
+Es importante el orden de importación de los partials, para evitar errores de dependencias. Primero los más generales(reset, fuentes) y luego los más específicos (páginas).
+
+```scss
+// _variables.scss
+@use "../core/variables" as vars;
+```
+**Organizar los partials**
+- en la carpeta core ponemos los estilos de organización: reset, variables 
+- podemos hacer una carpeta layout para los estilos de la estructura de la pagina
+- blocks o componentes para los estilos de las secciones
+- pages estilos para páginas especificas
+
+
+### 🔹 Variables en SASS
+- Explicar el porque 
+- Se definen con `$` y permiten reutilizar valores en todo el código.
+- Sirve para el colores, para las fuentes, tamaños de fuentes
+- Explicar como usar una fuente de Google Fonts dentro de las variables
+
+```scss
+$color-principal: #3498db;
+
+body {
+  background-color: $color-principal;
+}
+```
+
+## Bonus
+### 🟢 Mixins y Funciones en SASS
+- 🔹 Mixins: Bloques reutilizables de código
+
+```scss
+@mixin centrado() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  @include centrado();
+}
+```
+
+- 🔹 Mixins con parámetros
+```scss
+@mixin texto($size, $color) {
+  font-size: $size;
+  color: $color;
+}
+
+.title {
+  @include texto(24px, red);
+}
+```
+- 🔹 Funciones en SASS
+Las funciones permiten cálculos dinámicos, como convertir píxeles a rem:
+```scss
+$base-size: 16;
+
+@function rem($size) {
+  @return ($size / $base-size) * 1rem;
+}
+
+p {
+  font-size: rem(18);
+}
+```
+Que se convierte en:
+```scss
+p {
+  font-size: 1.125rem;
+}
+```
+
+
+
+
+
+
+
