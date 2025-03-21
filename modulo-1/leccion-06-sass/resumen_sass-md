@@ -25,21 +25,6 @@ Ejemplo en HTML:
 - Hacer un ejemplo de migración del proyecto de Netflix a Css con BEM
 
 
-En SASS, podemos estructurarlo con anidación y selectores &:
-
-```scss
-.header {
-  &__button {
-    background: blue;
-    &--success {
-      background: green;
-    }
-    &--small {
-      font-size: 12px;
-    }
-  }
-}
-```
 
 
 
@@ -86,6 +71,23 @@ Se convierte en:
   }
 }
 ```
+
+En SASS, podemos estructurarlo con anidación y selectores & con BEM:
+
+```scss
+.header {
+  &__button {
+    background: blue;
+    &--success {
+      background: green;
+    }
+    &--small {
+      font-size: 12px;
+    }
+  }
+}
+```
+
 
 ## Imagenes en SASS
 - Para incluir imágenes en SASS, se puede usar la función `url()`:
