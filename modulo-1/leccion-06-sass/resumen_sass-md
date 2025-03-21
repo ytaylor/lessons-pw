@@ -83,7 +83,7 @@ Se convierte en:
 
 ## Imagenes en SASS
 - Para incluir imágenes en SASS, se puede usar la función `url()`:
-- Es importante ver lo de las rutas de la s imágenes y su ubicación.  
+- Es importante ver lo de las rutas de las imágenes y su ubicación.  
 
 
 ### 🔵 Media Queries en SASS 📏

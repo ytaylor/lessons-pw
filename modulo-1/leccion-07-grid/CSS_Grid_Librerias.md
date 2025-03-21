@@ -39,8 +39,6 @@ row-gap: 20px;
 column-gap: 20px;
 ```
 
-- Trabajar con areas 
-
 ### 🔹 Definir una cuadrícula básica
 
 ```css
@@ -79,8 +77,8 @@ Para filas es similar:
   gap: 20px;
 }
 ```
-
 ### 🔹 Definir áreas en la cuadrícula
+- Trabajar con areas 
 
 ```css
 .container {
