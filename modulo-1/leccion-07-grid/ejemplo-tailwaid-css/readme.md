@@ -14,3 +14,7 @@ Ejemplo de clase Tailwind:
 
 - Bootstrap: “Te da los componentes ya hechos.”
 - Tailwind: “Te da las piezas para que tú montes el diseño.”
+
+🔗 Tailwind CSS
+📚 Documentación oficial:
+👉 https://tailwindcss.com/docs

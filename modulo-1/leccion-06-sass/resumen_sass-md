@@ -198,6 +198,33 @@ p {
   font-size: 1.125rem;
 }
 ```
+## Enseñar a usar google fonts
+
+### 🔹 ¿Cómo usar una fuente de Google Fonts?
+1. Ve a [Google Fonts](https://fonts.google.com) y elige una fuente.
+2. Copia el link y pégalo en el `<head>` de tu HTML:
+
+   ```html
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+   ```
+
+3. Usa la fuente en tu CSS:
+
+   ```css
+   body {
+     font-family: 'Roboto', sans-serif;
+   }
+   ```
+
+### 🔹 Variaciones de fuentes
+Si quieres negritas o cursivas, puedes añadir valores extra:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,italic">
+```
+
+💡 **Pro tip**: No uses más de **dos fuentes diferentes** en una web para mantenerla limpia y fácil de leer.
+
 
 
 
