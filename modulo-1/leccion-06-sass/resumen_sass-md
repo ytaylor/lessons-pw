@@ -19,8 +19,12 @@ Ejemplo en HTML:
   <button class="header__button--success"></button>
   <button class="header__button--small"></button>
 </header>
-
 ```
+
+
+- Hacer un ejemplo de migración del proyecto de Netflix a Css con BEM
+
+
 En SASS, podemos estructurarlo con anidación y selectores &:
 
 ```scss
@@ -36,6 +40,8 @@ En SASS, podemos estructurarlo con anidación y selectores &:
   }
 }
 ```
+
+
 
 ## 🟣 SASS: Preprocesador de CSS
 
@@ -227,6 +233,11 @@ Si quieres negritas o cursivas, puedes añadir valores extra:
 
 
 
+ Cositas para repasar: 
+ - las pseudoclases: hover, focus, active
+ - las pseudoclases: first-child, last-child, nth-child
+ - first-of-type, last-of-type, nth-of-type
+ - 
 
 
 
