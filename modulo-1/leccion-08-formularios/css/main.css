@@ -1,0 +1,54 @@
+/* Ningún árbol fue talado o recortado para generar esta hoja ...de estilos. */
+
+/* Reset de CSS por defecto del navegador */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+body {
+/*   background-color: #333333;
+  color: white; */
+}
+
+.header {
+  position: sticky;
+  top: 0;
+
+  background-color: darkcyan;
+  color: white;
+
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+
+  padding: 1.5rem;
+}
+
+.main {
+  margin: 2rem;
+}
+
+.label {
+  display: inline-block;
+  width: 170px;
+}
+
+.input {
+  width: 150px;
+}
+
+
+fieldset {
+  margin-block: 2em;
+}

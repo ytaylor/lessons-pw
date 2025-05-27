@@ -1,0 +1,33 @@
+/* Hoja de estilos de reset mínima */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fuente general */
+
+:root {
+  font: 16px 'Roboto', Verdana, sans-serif;
+}
+
+.header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+
+  background-color: darkcyan;
+
+  padding: 20px;
+  z-index: 1;
+}
+
+.header__title {
+  color: white;
+}
+
+.main {
+  padding: 2rem;
+}
+

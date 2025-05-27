@@ -63,7 +63,7 @@ Se convierte en:
  - Usar & para referenciar el selector padre:
 ```scss
 .menu {
-  .&_ul {
+  &_ul {
     list-style: none;
     li {
       display: inline-block;

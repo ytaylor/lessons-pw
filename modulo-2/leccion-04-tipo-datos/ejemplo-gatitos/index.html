@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lección Tipos de datos</title>
+
+  <link rel="stylesheet" href="https://beta.adalab.es/resources/stylesheets/all.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">Lección 4 Gaticos</h1>
+  </header>
+
+  <main class="main dark">
+    <ul class="js_catsUl cards">
+      <li class="card">
+        <img src="./images/cat1.webp" alt="Gato 1" class="card__img">
+        <h2 class="card__title">Garfield</h2>
+        <p class="card__description">Naranja</p>
+      </li>
+
+      <li class="card">
+        <img src="./images/cat2.webp" alt="Gato 2" class="card__img">
+        <h2 class="card__title">Salem</h2>
+        <p class="card__description">Gris</p>
+      </li>
+    </ul>
+
+    <form class="mt-1">
+      <h2>Da de alta tu gato:</h2>
+      <div class="col2">
+        <label for="name">Nombre:</label>
+        <input type="text" class="js_nameInput form__input-text" name="name" id="name">
+      </div>
+      <div class="col2">
+        <label for="image">Imagen (dirección):</label>
+        <input type="text" class="js_imageInput form__input-text" name="image" id="image">
+      </div>
+      <div class="col2">
+        <label for="breed">Raza:</label>
+        <input type="text" class="js_descInput form__input-text" name="breed" id="breed">
+      </div>
+      <input type="submit" value="Guardar" class="form__btn js_btn">
+      <button>Guardar</button>
+    </form>
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

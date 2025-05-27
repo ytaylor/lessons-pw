@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.palette {
+  display: flex;
+  border: 5px solid lightgray;
+  gap: 5px;
+  width: 220px;
+  
+
+  &__color {
+  width: 40px;
+  height: 40px;
+  }
+}
+
+.spaceship__list {
+  margin-inline: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style-type: none;
+  gap: 2rem;
+}
+
+.favourite {
+  background-color: salmon;
+  border: solid 5px darksalmon;
+}
+
+main {
+  margin-inline: 2rem;
+  display: grid;
+  grid-template-columns: 60% 40%;;
+}
+
+.favouriteSection {
+  background-color: #DDDDDD;
+}

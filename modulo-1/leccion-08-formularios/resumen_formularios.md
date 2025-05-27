@@ -1,5 +1,8 @@
 # 📝 Formularios en HTML
 
+- ¿Preguntar para que es un formulario, y donde se puede utilizar?
+
+
 Los formularios en HTML permiten a los usuarios ingresar y enviar datos a un servidor. Un formulario básico se define con la etiqueta `<form>`:
 
 ```html
@@ -28,8 +31,22 @@ Los formularios en HTML permiten a los usuarios ingresar y enviar datos a un ser
 | `radio`      | Selección única |
 | `file`       | Carga de archivos |
 | `hidden`     | Datos ocultos para el servidor |
+| `date`       | Fecha |
+| `modal`      | abra un modal |
 
 Ejemplo de un formulario con varios tipos de inputs:
+- Poner ejemplo del label del for, del placeholder
+- Explicar todas las propiedades type
+- EXplicar el type submit como boton de envio y lo que significa el atributo value y el placeholder
+- Explicar que las etiquetas siempre deben estar dentro de un elemento form y explicar el objetivo del action: https://dev.adalab.es/api/form y que todos los inputs tienen que tener name, id, placeholder, y label.
+- Explicar el método de get y post 
+- Explicar el legend y el fieldset
+- Explicar el botón reset
+- Explicar el botón de tipo de button 
+- Explicar la etiqueta button
+
+- 
+- 
 
 ```html
 <form>
@@ -146,6 +163,8 @@ input {
 ```
 
 ---
+
+# Bonus
 
 ## 🔢 **Expresiones Regulares en Formularios (Regex)**
 

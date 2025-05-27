@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lección 2.2</title>
+  <link rel="stylesheet" href="https://beta.adalab.es/resources/stylesheets/all.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">Lección 2. Eventos</h1>
+    <button class="menu__button js_menuBtn">☰</button>
+    <nav class="js_menuNav menu hidden">
+      <ul class="menu__list">
+        <li><a href="#about">Quiénes somos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="js_main main ">
+    <a class="js_darkLink" href="#">Modo oscuro</a>
+    <a class="js_lightLink" href="#">Modo claro</a>
+
+    <p class="text">Eventos</p>
+    <button class="js_btn">Salúdame, por favor</button>
+
+    <div class="mt-1 col2">
+      <section class="js_letterSection">
+        <p>Querida <span class="js_letterNameSpan1"></span>,</p>
+        <p>Contacto contigo para ofrecerte una oportunidad laboral....</p>
+        <p>Espero recibir noticias tuyas, <span class="js_letterNameSpan2"></span>.</p>
+      </section>
+    
+      <form>
+        <label for="name">Nombre:</label>
+        <input class="js_nameInput" type="text" name="name" id="name">
+      </form>
+    </div>
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -130,4 +130,3 @@ Bootstrap es una librería que facilita la maquetación de páginas con un siste
 
 -
 
-## 📌 Librerías CSS: Tailwaid CSS 🎭

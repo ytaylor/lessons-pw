@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font: 16px 'Roboto', Verdana, sans-serif;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  background-color: darkcyan;
+  padding: 1rem 2rem;
+}
+
+.header__title {
+  color: white;
+}
+
+.main {
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.dark {
+  background-color: #555;
+}
+
+.dark p, .dark a {
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__button {
+  background-color: transparent;
+  border-width: 0;
+  color: #fff;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  top: 60px;
+}
+
+.menu__list {
+  background-color: darkcyan;
+  color: #fff;
+  padding: 1em;
+  border: solid #555 3px;
+  list-style-type: none;
+}
+
+.hidden {
+  display: none;
+}

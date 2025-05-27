@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdaKittens</title>
+
+  <link rel="stylesheet" href="https://beta.adalab.es/resources/stylesheets/all.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__title">AdaKittens</h1>
+  </header>
+
+  <main class="main dark col2">
+
+    <form>
+      <h2 class="title--medium">pMás gatitos!</h2>
+      <div class="col2 mt-1">
+        <label class="form__label" for="name">Nombre:</label>
+        <input class="js_nameInput form__input-text" type="text" name="name" id="name" value="Nala">
+      </div>
+      <div class="col2 mt-1">
+        <label class="form__label" for="desc">Desc:</label>
+        <textarea class="js_descInput form__input-text" type="text" name="desc" id="desc">Descripción</textarea>
+      </div>
+      <div class="col2 mt-1">
+        <label class="form__label" for="image">Foto:</label>
+        <input class="js_imageInput form__input-text" type="text" name="image" id="image"
+          value="https://placecats.com/300/300">
+      </div>
+      <input class="js_AddBtn form__btn mt-1" type="submit" value="Agregar">
+    </form>
+
+    <ul class="js_kittensUl cards">
+      <!-- Aquí se mostrarán los gatitos -->
+
+    </ul>
+
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: darkcyan;
+  color: white;
+  padding: 20px;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 1;
+}
+
+.content {
+  border: solid 3px black;
+  margin: 5px;
+  padding: 10px;
+}
+
+.relative {
+  position: relative;
+}
+
+.ejem-relative {
+  position: relative;
+  top: -20px;
+  right: -20px;
+/*   top
+  bottom
+  right
+  left */
+
+  background-color: lightcyan;
+}
+
+.ejem-absolute {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  background-color: lightcyan;
+}
+
+.text {
+  margin: 20px;
+}
+
+.btn {
+  transform: translate(10px, 10px);
+  background-color: darkcyan;
+  color: white;
+  padding: 10px;
+}
+
+.btn:hover {
+  background-color: pink;
+  transform: translate(10px, 10px) scale(1.1);
+}
