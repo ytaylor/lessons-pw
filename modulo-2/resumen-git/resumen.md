@@ -1,8 +1,5 @@
-## Resumen: Trabajo con ramas en Git
+## Trabajo con ramas en Git
 
-Este resumen recoge los principales conceptos y prácticas sobre el uso de ramas en Git, tal como se presenta en las lecciones del módulo 2.8.
-
----
 
 ### ¿Qué es una rama?
 
@@ -37,19 +34,7 @@ Una rama (branch) es una copia paralela del proyecto donde puedes hacer cambios 
 2. Se crea una rama puntual desde `dev`
 3. Se trabaja y hace `commit` en esa rama
 4. Se sube la rama a GitHub (`git push origin nombre-rama`)
-5. Se crea una Pull Request (PR) para fusionarla con `dev`
-6. Otra persona revisa el código (code review)
-7. Si todo está bien, se fusiona
-
----
-
-### Pull Request (PR) y revisión de código
-
-* Antes de fusionar código, se crea una PR para que otra persona lo revise
-* GitHub permite dejar comentarios, marcar errores o aprobar la PR
-* Es buena práctica dejar siempre documentado qué se hizo y por qué
-* El objetivo es mantener calidad, coherencia y facilitar el trabajo en equipo
-
+5. Se crea un merge fusionarla con `dev`
 ---
 
 ### Conflictos
@@ -61,8 +46,6 @@ Una rama (branch) es una copia paralela del proyecto donde puedes hacer cambios 
   1. Trae cambios de `dev` a tu rama puntual: `git merge dev`
   2. Resuelve los conflictos
   3. Haz `commit` y `push`
-  4. La PR se actualiza automáticamente
-
 ---
 
 ### Comandos clave para trabajar con ramas
@@ -72,8 +55,9 @@ Una rama (branch) es una copia paralela del proyecto donde puedes hacer cambios 
 | Ver ramas                   | `git branch`                                 |
 | Crear y cambiar de rama     | `git switch -c nombre-de-la-rama`            |
 | Cambiar de rama             | `git switch nombre-de-la-rama`               |
-| Subir rama a GitHub         | `git push origin nombre-de-la-rama`          |
+| Subir rama a GitHub         | `git push origin nombre-de-la-rama`  `git push --set-upstream origin feature/importjs`        |
 | Ver ramas locales y remotas | `git branch -a`                              |
 | Borrar rama local           | `git branch -d nombre-de-la-rama`            |
 | Borrar rama remota          | `git push origin --delete nombre-de-la-rama` |
+| Fusionar rama con `dev`     | `git switch dev` <br> `git merge nombre-de-la-rama` <br> `git push origin dev` |
 
