@@ -1,0 +1,17 @@
+[
+    {
+        "id": "1",
+        "name": "Leia Organa",
+        "planet": "Alderaan"
+    },
+    {
+        "id": "2",
+        "name": "Luke Skywalker",
+        "planet": "Tatooine"
+    },
+    {
+        "id": "3",
+        "name": "Han Solo",
+        "planet": "Corellia"
+    }
+]

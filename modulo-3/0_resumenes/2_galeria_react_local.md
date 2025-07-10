@@ -20,10 +20,6 @@ Las imágenes suelen venir de una fuente como:
 - Actualización de contenido: con URLs puedes cambiar el contenido sin re-deploy.
 - Evitas duplicar imágenes: con una base de datos puedes controlar si una URL ya existe.
 
-
-
-
-
 ## 🗂️ Estructura del proyecto
 
 ```
