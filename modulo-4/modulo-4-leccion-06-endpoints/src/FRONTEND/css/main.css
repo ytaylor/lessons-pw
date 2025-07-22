@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 16px;
+  color: white;
+  font-family: "Bentham", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  --font-title: font-family: "Chonburi", serif;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 1.5rem;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  .background__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  height: 40dvh;
+  font-family: var(--font-title);
+}
+
+.mainmenu {
+  height: 20dvh;
+  position: sticky;
+  top: 16px;
+  container-type: scroll-state;
+  z-index: 1;
+
+  > .mainmenu__list {
+    /*border: solid 2px white;*/
+    
+    padding: 8px 16px;
+    margin-inline: auto;
+    position: absolute;
+    translate: -50%;
+    margin-left: 50dvw;
+    width: 90%;
+    max-width: 640px;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-decoration: underline;
+    border-radius: 2em;
+    
+    backdrop-filter: blur(20px);
+
+    z-index: 1;
+    transition: background-color .15s ease-in-out,
+    color .15s ease-in-out,
+    max-width .15s ease-in-out .1s,
+    font-size .15s ease-in-out .1s;
+
+    .mainmenu__link {
+      color: white;
+      text-decoration: none;
+    }
+    .mainmenu__link:hover {
+      text-decoration: underline;
+    }
+  }
+
+  /* <https://developer.chrome.com/blog/css-scroll-state-queries?hl=es-419> */
+  @supports (container-type: scroll-state) {
+    > .mainmenu__list {
+      @container scroll-state(stuck: top) {
+        background-color: #cb7057;
+        border: solid 1px #333333;
+        color: black;
+        font-size: 1.1rem;
+        max-width: 480px;
+        text-decoration: none;
+        flex-wrap: nowrap;
+      }
+    }
+  }
+}
+
+.hero {
+  width: 90%;
+  min-height: 40dvh;
+  margin-inline: auto;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+}
+
+.expoinfo div, .gallery div {
+  margin: 1rem;
+  margin-top: 2.5rem;
+}
+
+.expoinfo .subheading {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.expoinfo .heading {
+  font-size: 2rem;
+  font-family: var(--font-title);
+  margin-bottom: 1rem;
+}
+
+.expoinfo .content {
+  text-indent: 2.5ch;
+}
+
+.gallery {
+  position: relative; /* for ::before */
+}
+.gallery::before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff20;
+  backdrop-filter: blur(10px);
+}
+
+.album {
+  height: 100%;
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  
+  list-style-type: none;
+  
+  .album__item {
+    position: relative;    
+  }
+  .album__picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+  }
+  .album__caption {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 0.5em;
+    background-color: black;
+  }
+}
+
+@media (height >= 460px) {
+  .header {
+    height: 50dvh;
+  }
+  .hero {
+    min-height: 40dvh;
+  }
+}
+
+@media (width >= 768px) {
+  .hero {
+    max-width: 480px;
+    width: 60%;
+  }
+  .expo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100dvh;
+  }
+  .expo .expoinfo, .expo .gallery {
+    height: 100%;
+  }
+  .expoinfo div, .gallery div {
+    margin: 2.5rem;
+    margin-top: 128px;
+  }
+  .album {
+    padding-top: 0;
+  }
+  
+  .gallery {
+    animation-name: translateAnimation;
+    animation-duration: 1ms; /* Firefox requires this to apply the animation */
+    animation-direction: alternate;
+    animation-timeline: scroll(block nearest);
+  }
+  .gallery::before {
+    animation-name: blurTranslateAnimation;
+    animation-duration: 1ms; /* Firefox requires this to apply the animation */
+    animation-direction: alternate;
+    animation-timeline: scroll(block nearest);
+  }
+}
+
+@media (width >= 1280px) {
+  .album {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@keyframes blurTranslateAnimation {
+  from {
+    opacity: 0;
+    backdrop-filter: blur(0);
+    transform: translateX(0);
+  }
+  to {
+    opacity: 1;
+    background-color: #ffffff20;
+    backdrop-filter: blur(10px);
+    transform: translateX(0);
+  }
+}
+
+@keyframes translateAnimation {
+  from {
+    transform: translateX(400vw); /* scale(.1, 1); */
+  }
+  to {
+    transform: translateX(0); /* scale(1, 1); */
+  }
+}

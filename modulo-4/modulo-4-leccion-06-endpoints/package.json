@@ -1,0 +1,31 @@
+{
+  "name": "adagallery-server",
+  "version": "0.0.1",
+  "description": "FLAKJSLKJALKSdjlkfdjsdf",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adalab/pw-ejercicios-en-clase-c-pt.git"
+  },
+  "keywords": [
+    "server",
+    "expressjs",
+    "cors",
+    "mysql"
+  ],
+  "author": "Adalab+Adalabers Promo Clara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adalab/pw-ejercicios-en-clase-c-pt/issues"
+  },
+  "homepage": "https://github.com/Adalab/pw-ejercicios-en-clase-c-pt#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}
