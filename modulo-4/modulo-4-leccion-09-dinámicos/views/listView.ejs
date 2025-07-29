@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle</title>
+  <link rel="stylesheet" href="https://beta.adalab.es/resources/stylesheets/all.css">
+
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>Lista de Mujeres</h1>
+  </header>
+  <main class="page darkmode">
+    <ul>
+      <% list.forEach(function(item) { %>
+        <li>
+          <a href="/detail/<%= item.id %>">
+            <%= item.full_name %>
+          </a>
+        </li>
+        <% }); %>
+    </ul>
+  </main>
+</body>
+
+</html>
