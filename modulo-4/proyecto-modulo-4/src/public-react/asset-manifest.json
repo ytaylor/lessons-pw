@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "./static/css/main.9d4bbf46.chunk.css",
+    "main.js": "./static/js/main.e6f47022.chunk.js",
+    "main.js.map": "./static/js/main.e6f47022.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.03a77393.js",
+    "runtime-main.js.map": "./static/js/runtime-main.03a77393.js.map",
+    "static/js/2.12cd65a8.chunk.js": "./static/js/2.12cd65a8.chunk.js",
+    "static/js/2.12cd65a8.chunk.js.map": "./static/js/2.12cd65a8.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.9d4bbf46.chunk.css.map": "./static/css/main.9d4bbf46.chunk.css.map",
+    "static/js/2.12cd65a8.chunk.js.LICENSE.txt": "./static/js/2.12cd65a8.chunk.js.LICENSE.txt",
+    "static/media/_resetSection.scss": "./static/media/burger-gradient.9c985a2f.png",
+    "static/media/burger-logo.84822f6d.png": "./static/media/burger-logo.84822f6d.png",
+    "static/media/logo-delicious.b0f29115.png": "./static/media/logo-delicious.b0f29115.png",
+    "static/media/pepino.a73ab5f4.gif": "./static/media/pepino.a73ab5f4.gif",
+    "static/media/top.b69e6a8f.png": "./static/media/top.b69e6a8f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.03a77393.js",
+    "static/js/2.12cd65a8.chunk.js",
+    "static/css/main.9d4bbf46.chunk.css",
+    "static/js/main.e6f47022.chunk.js"
+  ]
+}
